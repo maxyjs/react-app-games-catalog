@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 import { GamePage, MainPage } from "./pages";
 
@@ -7,8 +7,8 @@ export const App = () => {
   return (
     <AppStyled>
       <Switch>
-        <HashRouter exact path="/" component={MainPage} />;
-        <HashRouter exact path="/game/:slug" component={GamePage} />
+        <Route exact path="/" component={MainPage} />;
+        <Route exact path="/game/:slug" component={GamePage} />
       </Switch>
     </AppStyled>
   );
