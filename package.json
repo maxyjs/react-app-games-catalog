@@ -2,10 +2,13 @@
   "name": "react-app-games-catalog",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://maxyjs.github.io/react-app-games-catalog",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --open",
-    "build": "cross-env NODE_ENV=production npx webpack"
+    "build": "cross-env NODE_ENV=production npx webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "maxyjs",
   "license": "ISC",
@@ -21,6 +24,7 @@
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "cross-env": "^7.0.3",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^4.5.1",
     "terser-webpack-plugin": "^5.1.1",
     "webpack": "^5.16.0",
