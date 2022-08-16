@@ -1,7 +1,7 @@
 # Games Catalog React App
 
 Тестовое задание на позицию Frontend developer (React)  
-##[Demo](https://effortless-pony-943041.netlify.app/)
+## [Demo](https://effortless-pony-943041.netlify.app/)
 
 ### Задание:
 
